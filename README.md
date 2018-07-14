@@ -1,3 +1,20 @@
+Restaurant Review
+
+to run this project, open you cmd and type:
+
+python -m http.server
+
+or
+
+python3 -m http.server
+
+or
+for python < 3.6
+
+python -m SimpleHttpServer -p 8000
+
+and access the page: http://localhost:8000 in your favorite browser.
+
 # Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
