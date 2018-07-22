@@ -1,15 +1,11 @@
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    // TODO: remove the old cache
     event.waitUntil(self.clients.claim())
   );
 });
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
-      // TODO: change the site's theme, eg swap the vars in public/scss/_theme.scss
-      // Ensure at least $primary-color changes
-      // TODO: change cache name to 'wittr-static-v2'
         caches.open('mws-restaurant-v1').then(function(cache) {
             return cache.addAll([
                 '/',
