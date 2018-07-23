@@ -317,28 +317,50 @@ nav h1 a {
 }
 
 
+@media only screen and (max-width: 720px){
+ 
+  #restaurants-list li {
+      margin: 15px;
+      min-height: 350px;
+      width: 216px;
+      padding: 0px 15px 25px;
+  }
+
+  #restaurants-list .restaurant-img {
+    min-height: 200px;
+
+  }
+  
+  #reviews-container {
+    padding: 70px 12px 80px;
+  }
+
+  #restaurant-container {
+    padding: 140px 12px 15px;
+  }
+
+
+}
+
+
 @media only screen and (max-width: 394px){
   #restaurants-list li {
-      background-color: #fff;
-      border: 2px solid #ccc;
-      font-family: Arial,sans-serif;
       margin: 15px;
       min-height: 350px;
       padding: 0px 15px 25px;
-      text-align: left;
       width: 216px;
-      display: inline-grid;
   }
   #restaurants-list .restaurant-img {
     min-height: 200px;
 
   }
 
-  #restaurant-container, #reviews-container {
-    padding: 140px 8px 15px;
-  }
-  
   #reviews-container {
     padding: 30px 15px 80px;
-}
+  }
+  #restaurant-container, #reviews-container {
+    padding: 140px 10px 15px;
+  }
+
+
 }
